@@ -1,0 +1,17 @@
+<h2 style="margin-left:550px;"><b>Various Violins</b></h2>
+<br>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="margin-left: 120px; margin-right: 50px;  width: 1000px; ">
+    <div class="col" *ngFor="let product of ProductDetails" [ngSwitch]="product.status">
+        <div class="card h-100">
+            <img src="{{product.image}}" class="card-img-top" alt="..." height="320px">
+            <div class="card-body" >
+                <h5>{{product.pname}}</h5>
+                <p style=padding-left:5px;><b>Product Id: </b>{{product.pid}}</p>
+                    <p [style.padding-left.px]="'05'" *ngSwitchCase="'In Stock'" class="text-success">{{product.status}}</p>
+                    <p [style.padding-left.px]="'05'" *ngSwitchCase="'Out of Stock'" class="text-danger">{{product.status}}</p>
+                    <br>
+                    {{product.price | currency:'INR'}}<br>
+                <!-- Modal -->
+            </div>
+        </div>
+    </div>

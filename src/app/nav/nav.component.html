@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color:brown;">{{title}}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" ><button style="background-color:brown; color: white;" type="button" routerLink=" ">HOME</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" ><button style="background-color: brown; color: white;"type="button" routerLink="details">Login</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" ><button style="background-color: brown; color: white;"type="button" routerLink="products">View products</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" ><button style="background-color: brown; color: white;"type="button" routerLink="cards">Other details</button></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: brown; color: white;">
+              Instruments
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="newcards">Guitar</a></li>
+              <li><a class="dropdown-item" routerLink="violincards">Violin</a></li>
+              <li><a class="dropdown-item" href="#">Keyboard</a></li>
+              <li><a class="dropdown-item" href="#">Flute</a></li>
+              <li><a class="dropdown-item" href="#">Drums</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+            <input type="text" #productname placeholder="Enter product name" style="border-radius:10px;">&nbsp;
+            <!--EVENT BINDING-->
+            <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value);productname.value=''" style="border-radius:10px;">Search</button>
+            <!--Access the Search Component-->
+            <br>
+            &nbsp;&nbsp;&nbsp;
+            <app-search [product]="productentered"></app-search>
+          </form>
+      </div>
+    </div>
+</nav>
+
+
+
+
+  

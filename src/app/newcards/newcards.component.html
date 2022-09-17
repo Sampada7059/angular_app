@@ -1,0 +1,18 @@
+<h2 style="margin-left:550px;"><b>Various Guitars</b></h2>
+<br>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="margin-left: 120px; margin-right: 50px;  width: 1000px; ">
+    <div class="col" *ngFor="let prod of GuitarProducts" [ngSwitch]="prod.status">
+        <div class="card h-100">
+            <img src="{{prod.image}}" class="card-img-top" alt="..." height="320px">
+            <div class="card-body" >
+                <h5>{{prod.pname}}</h5>
+                <p style=padding-left:5px;><b>Product Id: </b>{{prod.pid}}</p>
+                    <p [style.padding-left.px]="'05'" *ngSwitchCase="'In Stock'" class="text-success">{{prod.status}}</p>
+                    <p [style.padding-left.px]="'05'" *ngSwitchCase="'Out of Stock'" class="text-danger">{{prod.status}}</p>
+                    <br>
+                    {{prod.price | currency:'INR'}}<br>
+                <!-- Modal -->
+            </div>
+        </div>
+    </div>
+
