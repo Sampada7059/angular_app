@@ -7,10 +7,12 @@ import { NavComponent } from './nav/nav.component';
 import { SearchComponent } from './search/search.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CardsComponent } from './cards/cards.component';
-import { DetailsComponent } from './details/details.component';
 import { ProductsComponent } from './products/products.component';
-import { FormsModule } from '@angular/forms';
-import { NewcardsComponent } from './newcards/newcards.component';
+import { GuitarcardsComponent } from './guitarcards/guitarcards.component';
+import { CounterComponent } from './counter/counter.component';
+import { CounterchildComponent } from './counter/counterchild/counterchild.component';
+import { AdsComponent } from './ads/ads.component';
+import { AllproductsComponent } from './allproducts/allproducts.component';
 import { ViolincardsComponent } from './violincards/violincards.component';
 
 
@@ -21,10 +23,13 @@ import { ViolincardsComponent } from './violincards/violincards.component';
     SearchComponent,
     CarouselComponent,
     CardsComponent,
-    DetailsComponent,
     ProductsComponent,
-    NewcardsComponent,
-    ViolincardsComponent,
+    GuitarcardsComponent,
+    CounterComponent,
+    CounterchildComponent,
+    AdsComponent,
+    AllproductsComponent,
+    ViolincardsComponent
   ],
   imports: [
     BrowserModule,
