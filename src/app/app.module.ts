@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -14,6 +15,7 @@ import { CounterchildComponent } from './counter/counterchild/counterchild.compo
 import { AdsComponent } from './ads/ads.component';
 import { AllproductsComponent } from './allproducts/allproducts.component';
 import { ViolincardsComponent } from './violincards/violincards.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -29,11 +31,14 @@ import { ViolincardsComponent } from './violincards/violincards.component';
     CounterchildComponent,
     AdsComponent,
     AllproductsComponent,
-    ViolincardsComponent
+    ViolincardsComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

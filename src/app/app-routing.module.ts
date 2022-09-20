@@ -6,6 +6,7 @@ import { ProductsComponent } from './products/products.component';
 import { GuitarcardsComponent } from './guitarcards/guitarcards.component';
 import { AllproductsComponent } from './allproducts/allproducts.component';
 import { ViolincardsComponent } from './violincards/violincards.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {path : ' ', component: CarouselComponent} , 
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path : 'products', component: ProductsComponent},
   {path : 'guitarcards' , component: GuitarcardsComponent},
   {path : 'allproducts' , component: AllproductsComponent},
-  {path : 'violincards' , component: ViolincardsComponent}
+  {path : 'violincards' , component: ViolincardsComponent},
+  {path : 'register' , component: RegisterComponent}
 
 ];
 
