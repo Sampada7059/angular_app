@@ -16,6 +16,7 @@ import { AdsComponent } from './ads/ads.component';
 import { AllproductsComponent } from './allproducts/allproducts.component';
 import { ViolincardsComponent } from './violincards/violincards.component';
 import { RegisterComponent } from './register/register.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { RegisterComponent } from './register/register.component';
     AdsComponent,
     AllproductsComponent,
     ViolincardsComponent,
-    RegisterComponent
+    RegisterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

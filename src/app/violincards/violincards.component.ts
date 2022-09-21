@@ -19,10 +19,10 @@ export class ViolincardsComponent implements OnInit {
   toggleContent(){
     var content='';
     if(this.Detail){
-      content = 'fa fa-minus';
+      content = 'fa fa-plus';
     }
     else{
-      content='fa fa-plus';
+      content='fa fa-minus';
     }
     return content;
   }

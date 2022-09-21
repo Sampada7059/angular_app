@@ -1,0 +1,24 @@
+<marquee> Contact Us</marquee>
+ <div class="card col-lg-6" style="border:none;margin-top: 30px ;margin-left:280px;">
+    <div class="card-body col-lg-12">
+        <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px; background-color: cornflowerblue;"
+            *ngFor="let m of con">
+            <div class="col-lg-3">
+            </div>
+            <div class="col-lg-9" style="margin-top:20px;">
+                <div>
+                    Name: {{ m.ename | uppercase}}
+                    <br>
+                    Email-ID: {{m.emailid}}
+                    <br>
+                    Phone : {{m.ephone}}
+                    <br>
+                    Address: {{m.eaddress}}
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

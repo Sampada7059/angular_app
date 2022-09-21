@@ -9,17 +9,17 @@ label {
 
 form {
     padding: 20px;
-    margin-left: 500px;
+    margin-left: 400px;
     width: 40%;
     border-style: inset;
     border-radius: 10px;
-    border-color: black;
-    box-shadow: 2px 3px 4px yellow;
+    border-color: beige;
+    box-shadow: 2px 3px 4px brown;
 }
 
 form:hover {
-    color: rgb(174, 155, 11);
-    background-color: rgb(40, 40, 40);
+    color: rgb(99, 50, 50);
+    background-color: burlywood;
     transform:scale(1.2);
 
 }
