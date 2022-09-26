@@ -7,38 +7,41 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" ><button style="background-color:brown; color: white;" type="button" routerLink=" ">HOME</button></a>
+            <a class="nav-link active" aria-current="page" ><button style="background-color:brown; color: white;" type="button" routerLink="home">HOME</button></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" ><button style="background-color: brown; color: white;"type="button" routerLink="register">Login</button></a>
+            <a class="nav-link active" aria-current="page" ><button style="background-color: brown; color: white;"type="button" routerLink="register">SignUp</button></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" ><button style="background-color: brown; color: white;"type="button" routerLink="products">View products</button></a>
+            <a class="nav-link active" aria-current="page" ><button style="background-color: brown; color: white;"type="button" routerLink="deals" *ngIf="auth">Our Products</button></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" ><button style="background-color: brown; color: white;"type="button" routerLink="cards">Other details</button></a>
+            <a class="nav-link active" aria-current="page" ><button style="background-color: brown; color: white;"type="button" routerLink="products" *ngIf="auth">View products</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" ><button style="background-color: brown; color: white;"type="button" routerLink="cards" *ngIf="auth">Contact & Info</button></a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: brown; color: white;">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: brown; color: white;" *ngIf="auth">
               Instruments
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" routerLink="guitarcards">Guitar</a></li>
               <li><a class="dropdown-item" routerLink="violincards">Violin</a></li>
-              <li><a class="dropdown-item" href="#">Keyboard</a></li>
-              <li><a class="dropdown-item" href="#">Flute</a></li>
+              <li><a class="dropdown-item" routerLink="keyboard">Keyboard</a></li>
+              <li><a class="dropdown-item" routerLink="drums">Drums</a></li>
               <li><a class="dropdown-item" routerLink="allproducts">All Products</a></li>
             </ul>
           </li>
         </ul>
         <form class="d-flex">
-            <input type="text" #productname placeholder="Enter product name" style="border-radius:10px;">&nbsp;
-            <!--EVENT BINDING-->
-            <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value);productname.value=''" style="border-radius:10px;">Search</button>
-            <!--Access the Search Component-->
-            <br>
-            &nbsp;&nbsp;&nbsp;
-            <app-search [product]="productentered"></app-search>
+           
+
+            <button routerLink='cartitem' style="height:5px;border:none;" *ngIf="auth">
+              <span class="fa fa-cart-plus" style="font-size:16px;color:black"><sup class="text-warning" style="font-size:10px;margin-left: 3px;;">{{cartCount}}</sup></span>
+            </button> &nbsp;&nbsp;&nbsp;
+            
+            <a class="btn btn-outline-warning" type="submit" style="border-radius:10px;" routerLink="login" *ngIf="auth">Logout</a>
           </form>
       </div>
     </div>

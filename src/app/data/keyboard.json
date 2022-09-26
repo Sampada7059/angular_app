@@ -1,0 +1,79 @@
+[
+    {
+        "pid": "100",
+        "pname": "Roland E-09IN Arranger Keyboard",
+        "status": "In Stock",
+        "color": "green",
+        "price": "40000",
+        "image": "https://www.musicstores.in/3753-home_default/roland-e-09-keyboard-arranger-keyboard.jpg"
+      },
+      {
+        "pid": "101",
+        "pname": "Korg PA-600 Arranger Keyboard",
+        "status": "In Stock",
+        "color": "green",
+        "price": "98000",
+        "image": "https://www.musicstores.in/3746-home_default/korg-arranger-keyboard-pa-600.jpg"
+      },
+      
+      {
+        "pid": "102",
+        "pname": "Korg PA-300 Arranger Keyboard",
+        "status": "In Stock",
+        "color": "yellow",
+        "price": "68500",
+        "image": "https://www.musicstores.in/2133-home_default/korg-pa-300-arranger-keyboard-.jpg"
+      },
+      
+      {
+        "pid": "103",
+        "pname": "Yamaha PSR-SX700 Arranger Workstation Keyboard",
+        "status": "In Stock",
+        "color": "green",
+        "price": "88000",
+        "image": "https://www.musicstores.in/3343-home_default/yamaha-psr-sx700-arranger-workstation-keyboard.jpg"
+      },
+      
+      {
+        "pid": "104",
+        "pname": "Roland E-A7 Expandable Arranger Keybord",
+        "status": "In Stock",
+        "color": "red",
+        "price": "80000",
+        "image": "https://www.musicstores.in/2262-home_default/roland-e-a7-expandable-arranger-keybord.jpg"
+      },
+      
+      {
+        "pid": "105",
+        "pname": "Yamaha PSR-S775 Arranger Keyboard With Indian Tones & Styles",
+        "status": "In Stock",
+        "color": "green",
+        "price": "65000",
+        "image": "https://www.musicstores.in/2246-home_default/yamaha-psr-s775-arranger-keyboard.jpg"
+      },
+      
+      {
+        "pid": "106",
+        "pname": "Yamaha PSR-S975 Arranger Keyboard",
+        "status": "In Stock",
+        "color": "yellow",
+        "price": "85000",
+        "image": "https://www.musicstores.in/2249-home_default/yamaha-psr-s975-arranger-keyboard.jpg"
+      },
+      {
+        "pid": "107",
+        "pname": "Yamaha PSR-SX600 Arranger Keyboard",
+        "status": "In Stock",
+        "color": "yellow",
+        "price": "50000",
+        "image": "https://www.musicstores.in/6026-home_default/yamaha-psr-sx600-arranger-keyboard.jpg"
+      },
+      {
+        "pid": "108",
+        "pname": "Yamaha PSR-S670 Arranger Workstation Keyboard",
+        "status": "In Stock",
+        "color": "yellow",
+        "price": "44000",
+        "image": "https://www.musicstores.in/1131-home_default/yamaha-psr-s670-arranger-workstation-keyboard.jpg"
+      }
+  ]
