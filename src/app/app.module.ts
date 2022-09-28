@@ -25,6 +25,7 @@ import { StoredealsComponent } from './deals/storedeals/storedeals.component';
 import { CartItemsComponent } from './cartitem/cartitem.component';
 import { KeyboardComponent } from './keyboard/keyboard.component';
 import { DrumsComponent } from './drums/drums.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 
@@ -50,7 +51,8 @@ import { DrumsComponent } from './drums/drums.component';
     StoredealsComponent,
     CartItemsComponent,
     KeyboardComponent,
-    DrumsComponent
+    DrumsComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

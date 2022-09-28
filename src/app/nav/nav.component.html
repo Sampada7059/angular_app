@@ -9,15 +9,14 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" ><button style="background-color:brown; color: white;" type="button" routerLink="home">HOME</button></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" ><button style="background-color: brown; color: white;"type="button" routerLink="register">SignUp</button></a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" ><button style="background-color: brown; color: white;"type="button" routerLink="deals" *ngIf="auth">Our Products</button></a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" ><button style="background-color: brown; color: white;"type="button" routerLink="products" *ngIf="auth">View products</button></a>
           </li>
+         
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" ><button style="background-color: brown; color: white;"type="button" routerLink="cards" *ngIf="auth">Contact & Info</button></a>
           </li>
@@ -31,6 +30,19 @@
               <li><a class="dropdown-item" routerLink="keyboard">Keyboard</a></li>
               <li><a class="dropdown-item" routerLink="drums">Drums</a></li>
               <li><a class="dropdown-item" routerLink="allproducts">All Products</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: brown; color: white;" >
+              User/Admin
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="register">User</a></li>
+              <li><a class="dropdown-item" routerLink="admin">Admin</a></li>
+              
             </ul>
           </li>
         </ul>

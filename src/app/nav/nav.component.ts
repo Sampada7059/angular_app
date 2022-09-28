@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 //Cart count
 import { CartService } from '../cart.service';
+import { AdminService } from '../admin.service';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -12,6 +13,7 @@ export class NavComponent implements OnInit {
   //Dependency injection
   constructor(private authService:UserService,private cartSvc:CartService) { }
   auth:boolean=false;
+  
   //Add to cart
   cartCount: number=0;
   //STRING INTERPOLATION
@@ -47,6 +49,7 @@ export class NavComponent implements OnInit {
         this.auth = data;
       }
     );
+    
     //Cart count
     this.cartSvc.getCartItems().subscribe (     
       (response) =>

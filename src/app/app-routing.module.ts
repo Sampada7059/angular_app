@@ -14,6 +14,9 @@ import { StoredealsComponent } from './deals/storedeals/storedeals.component';
 import { CartItemsComponent } from './cartitem/cartitem.component';
 import { KeyboardComponent } from './keyboard/keyboard.component';
 import { DrumsComponent } from './drums/drums.component';
+import { AdminComponent } from './admin/admin.component';
+
+
 
 const routes: Routes = [
   {path : '', component: CarouselComponent} , 
@@ -29,7 +32,8 @@ const routes: Routes = [
   {path :'deals',component:StoredealsComponent},
   {path : 'cartitem', component: CartItemsComponent},
   {path : 'keyboard' , component : KeyboardComponent},
-  {path : 'drums' , component: DrumsComponent}
+  {path : 'drums' , component: DrumsComponent},
+  {path : 'admin' , component: AdminComponent}
   
 ];
 

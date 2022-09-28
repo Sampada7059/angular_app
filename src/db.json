@@ -141,27 +141,12 @@
       "useremail": "john@gmail.com",
       "password": "John@123",
       "mobile": "745637826"
-    },
+    }
+  ],
+  "admin":[
     {
-      "username": "Sampada",
-      "useremail": "sampadapolepalli7@gmail.com",
-      "password": "",
-      "mobile": "",
-      "id": 5
-    },
-    {
-      "username": "Sampada",
-      "useremail": "sampadapolepalli7@gmail.com",
-      "password": "",
-      "mobile": "",
-      "id": 6
-    },
-    {
-      "username": "Sampada",
-      "useremail": "sampadapolepalli7@gmail.com",
-      "password": "",
-      "mobile": "",
-      "id": 7
+      "useremail": "admin@gmail.com",
+      "password":"admin@7"
     }
   ],
   "cart": [
